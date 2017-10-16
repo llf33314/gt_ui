@@ -37,6 +37,15 @@
       "name": "基础组件",
       "groups": [
         {
+          "groupName": "Gt",
+          "list": [
+            {
+              "path": "/layout",
+              "title": "Layout 布局"
+            }
+          ]
+        },
+        {
           "groupName": "Basic",
           "list": [
             {
