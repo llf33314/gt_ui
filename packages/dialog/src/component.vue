@@ -95,9 +95,18 @@
           this.$nextTick(() => {
             this.$refs.dialog.scrollTop = 0;
           });
+          /*eslint-disable */
+          console.log(window.PARANETMASKMAIN,'window.PARANETMASKMAIN')
+          if(window.PARANETMASKMAIN){
+            window.parent.postMessage('openMask()',window.PARANETMASKMAIN)
+          }
         } else {
           this.$el.removeEventListener('scroll', this.updatePopper);
           this.$emit('close');
+          /*eslint-disable */
+          if(window.PARANETMASKMAIN){
+            window.parent.postMessage('closeMask()',window.PARANETMASKMAIN)
+          }
         }
       }
     },

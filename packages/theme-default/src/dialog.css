@@ -13,7 +13,7 @@
     box-shadow: var(--dialog-box-shadow);
     box-sizing: border-box;
     margin-bottom: 50px;
-
+    margin-left:-95px;
     @modifier tiny {
       width: var(--dialog-tiny-width);
     }
@@ -86,11 +86,15 @@
   }
 
   .dialog-fade-enter-active {
-    animation: dialog-fade-in .3s;
+   animation: dialog-fade-in .3s;
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
   }
 
   .dialog-fade-leave-active {
-    animation: dialog-fade-out .3s;
+     animation: dialog-fade-out .3s;
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
   }
 
   @keyframes dialog-fade-in {

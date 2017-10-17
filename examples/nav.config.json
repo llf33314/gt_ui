@@ -40,6 +40,10 @@
           "groupName": "Gt",
           "list": [
             {
+              "path": "/dialog",
+              "title": "Dialog 对话框"
+            },
+            {
               "path": "/layout",
               "title": "Layout 布局"
             }
