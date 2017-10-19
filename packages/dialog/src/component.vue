@@ -17,7 +17,7 @@
         </div>
         <div class="el-dialog__body" v-if="rendered"><slot></slot></div>
         <div class="el-dialog__footer" v-if="$slots.footer">
-          <slot name="footer"></slot>
+          <slot name="footer"></slot> 
         </div>
       </div>
     </div>
