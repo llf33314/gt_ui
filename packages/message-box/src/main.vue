@@ -190,7 +190,14 @@
       },
 
       visible(val) {
-        if (val) this.uid++;
+        if (val) {
+          this.uid++;
+          /*eslint-disable */
+          //if(window.PARANETMASKMAIN) window.parent.postMessage('openMask()',window.PARANETMASKMAIN);
+        }else{
+          /*eslint-disable */
+          //if(window.PARANETMASKMAIN) window.parent.postMessage('closeMask()',window.PARANETMASKMAIN);
+        };
         if (this.$type === 'alert' || this.$type === 'confirm') {
           this.$nextTick(() => {
             this.$refs.confirm.$el.focus();

@@ -13,7 +13,6 @@
     box-shadow: var(--dialog-box-shadow);
     box-sizing: border-box;
     margin-bottom: 50px;
-    margin-left:-95px;
     @modifier tiny {
       width: var(--dialog-tiny-width);
     }
