@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <gt-test></gt-test>
-    <h1 class="gt-test">gt-test</h1>
+    <p>{{ msg}}</p>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
     name: 'HelloWorld',
     data() {
       return {
-        msg: 'Welcome to Your Vue.js App'
+        msg: this.$t('messages.hello')
       }
     }
   }
